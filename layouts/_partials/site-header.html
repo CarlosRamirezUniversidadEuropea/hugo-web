@@ -1,0 +1,15 @@
+<header class="site-header">
+  <div class="site-wrap site-header__inner">
+    <a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    <nav class="site-nav" aria-label="Main">
+      {{- range site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{- end }}
+      {{- range site.Params.social }}
+        <a class="social-link" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .name }}" title="{{ .name }}">
+          {{- with resources.Get (printf "ananke/socials/%s.svg" .icon) }}{{ .Content | safe.HTML }}{{ end -}}
+        </a>
+      {{- end }}
+    </nav>
+  </div>
+</header>

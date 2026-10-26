@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <section class="hero site-wrap">
+    <p class="eyebrow">{{ site.Params.tagline }}</p>
+    <h1>{{ site.Title }}</h1>
+    <p class="lead">{{ site.Params.description }}</p>
+    <div class="hero__actions">
+      {{- range site.Params.social }}
+        <a class="btn" href="{{ .url }}" target="_blank" rel="noopener">
+          {{- with resources.Get (printf "ananke/socials/%s.svg" .icon) }}{{ .Content | safe.HTML }}{{ end }}
+          Follow on {{ .name }}
+        </a>
+      {{- end }}
+      <a class="btn btn--ghost" href="/tutorials/">Browse tutorials</a>
+    </div>
+  </section>
+
+  <section class="section site-wrap">
+    <div class="section-head">
+      <h2>Latest tutorials</h2>
+      <a href="/tutorials/">All tutorials &rarr;</a>
+    </div>
+    {{- $tutorials := where site.RegularPages "Section" "tutorials" | first 6 }}
+    {{- with $tutorials }}
+      <div class="card-grid">
+        {{- range . }}
+          {{ partial "tutorial-card.html" . }}
+        {{- end }}
+      </div>
+    {{ else }}
+      <p class="empty">New tutorials are on the way.</p>
+    {{ end }}
+  </section>
+{{ end }}

@@ -1,0 +1,25 @@
+baseURL = 'https://ramaireztreasure.com/'
+locale = 'en-us'
+title = 'Ramairez Treasure'
+theme = 'ananke'
+
+[params]
+  tagline = 'Dance tutorials you can learn at your own pace'
+  description = 'Step-by-step dance tutorials. Learn the moves, practice the rhythm, and build your confidence.'
+  body_classes = 'sans-serif'
+  # Replace with your Buy Me a Coffee username
+  bmc_username = 'ramaireztreasure'
+
+  [params.ananke]
+    custom_css = ['custom.css']
+    show_recent_posts = false
+
+  [[params.social]]
+    name = 'TikTok'
+    url = 'https://www.tiktok.com/@ramaireztreasure'
+    icon = 'tiktok'
+
+[[menus.main]]
+  name = 'Tutorials'
+  url = '/tutorials/'
+  weight = 1

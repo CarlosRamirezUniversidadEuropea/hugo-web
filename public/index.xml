@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Ramairez Treasure</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Ramairez Treasure</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 25 Oct 2026 11:00:00 +0200</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Hip-Hop Groove</title>
+				<link>http://localhost:1313/tutorials/hip-hop-groove/</link>
+				<pubDate>Sun, 25 Oct 2026 11:00:00 +0200</pubDate>
+				<guid>http://localhost:1313/tutorials/hip-hop-groove/</guid>
+				<description>&lt;p&gt;A relaxed groove built on the basic footwork. Focus on the bounce from the knees and keep your upper body loose.&lt;/p&gt;&#xA;&lt;p&gt;Replace this text with your own lesson notes and add your TikTok video link.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Basic Footwork</title>
+				<link>http://localhost:1313/tutorials/basic-footwork/</link>
+				<pubDate>Sun, 25 Oct 2026 10:00:00 +0200</pubDate>
+				<guid>http://localhost:1313/tutorials/basic-footwork/</guid>
+				<description>&lt;p&gt;Start here. This tutorial breaks the footwork into four counts so you can practice one step at a time.&lt;/p&gt;&#xA;&lt;p&gt;Replace this text with your own lesson notes and add your TikTok video link.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

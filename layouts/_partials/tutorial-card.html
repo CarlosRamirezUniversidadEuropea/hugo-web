@@ -1,0 +1,10 @@
+<a class="card" href="{{ .RelPermalink }}">
+  {{- with .Params.level }}
+    <span class="card__level">{{ . }}</span>
+  {{- end }}
+  <h3>{{ .Title }}</h3>
+  {{- with .Description }}
+    <p>{{ . }}</p>
+  {{- end }}
+  <span class="card__date">{{ .Date.Format "Jan 2, 2006" }}</span>
+</a>
